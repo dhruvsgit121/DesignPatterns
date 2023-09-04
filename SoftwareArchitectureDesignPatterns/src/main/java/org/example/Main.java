@@ -2,6 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        PizzaStore pizzaStore = new PizzaStore(new SimplePizzaFactory());
+        pizzaStore.orderPizza("veggie");
     }
+
 }
